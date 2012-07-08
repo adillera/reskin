@@ -1,0 +1,87 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#nucleus {
+  border: 1px solid #ff0000;
+  position: absolute;
+  width: 566px;
+  height: 566px;
+  background: url(<%= asset_path "nucleus.png" %>);
+  top: -9000px;
+  left: -9000px;
+}
+
+#item-clone {
+  width: 150px;
+  height: 150px;
+  margin: 25px 0 0 25px; /*This should be the same with the margin of the project items.*/
+  background: url(<%= asset_path "nucleus-small.png" %>);
+  position: absolute;
+  top: -9000px;
+  left: -9000px;
+
+  .title {
+    position: absolute;
+    top: 65px;
+    left: 49px;
+  }
+}
+
+#holder {
+  position: relative;
+
+  #projects-holder {
+    padding-bottom: 25px; /*This should be the same with the margin of the project items.*/
+
+    .create-new {
+      opacity: 0.3;
+
+      .title {
+        left: 37px;
+      }
+    }
+
+    .project-item {
+      cursor: pointer;
+      width: 150px;
+      height: 150px;
+      display: inline-block;
+      margin: 25px 0 0 25px;
+      position: relative;
+      background: url(<%= asset_path "nucleus-small.png" %>);
+
+      .title {
+        position: absolute;
+        top: 65px;
+        left: 49px;
+      }
+    }
+
+    #element-clone {
+      width: 150px;
+      height: 150px;
+      margin: 25px 0 0 25px; /*This should be the same with the margin of the project items.*/
+      background: url(<%= asset_path "nucleus-small.png" %>);
+      position: relative;
+
+      .title {
+        position: absolute;
+        top: 65px;
+        left: 49px;
+      }
+    }
+  }
+
+  #project-main {
+    width: 566px;
+    height: 566px;
+    position: absolute;
+    display: none;
+    background: url(<%= asset_path "nucleus.png" %>);
+  }
+}
